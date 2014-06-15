@@ -1,0 +1,99 @@
+Breve introduzione ed uso di Pandoc: Markdown ovunque
+=====================
+![Cosa è Pandoc](citazione_johnmacfarlane.jpg)
+
+------------
+Disclaimer
+----------
+
+Non è necessario avere conoscenze tecniche specifiche per leggere l'articolo, ma vi consiglio comunque di curiosare cosa sia il ***Markdown*** leggendo la relativa pagina di [Wikipedia][1] o accedendo al sito del suo [Creatore :)][2]
+
+Markdown Editor Online
+---------
+Se preferite imparare scrivendo direttamente su editor così detti [WYSIWYG][3] che interpretano real-time la sintassi Markdown vi riporto qui sotto alcuni editor che ho ottenuto da una semplice ricerca in rete, solo per farvi un'idea delle applicazioni esistenti
+
+ - https://stackedit.io
+ - http://dillinger.io
+ - http://markable.in
+ - http://epiceditor.com
+
+Qui invece trovate un buon articolo sullo stesso tema
+
+<blockquote class="twitter-tweet" lang="en"><p>78 Tools for Writing and Previewing Markdown <a href="http://t.co/JMlltgPiMb">http://t.co/JMlltgPiMb</a> via <a href="https://twitter.com/mashable">@mashable</a></p>&mdash; Riccardo Mancinelli (@ricmancio) <a href="https://twitter.com/ricmancio/statuses/452364788039839744">April 5, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Cosa ci occorre
+------------
+
+Una volta imparato brevemente la [sintassi del Markdown][4] creato da [***John Gruber***][5]
+andiamo a scaricare [Pandoc][6]
+
+Definizione?!
+--------------
+
+Pandoc se non è ancora chiaro si può definire come un tool a riga di comando che converte testo semplice in file di altro formato
+
+Verificare l'installazione di Pandoc
+--------
+Per assicuravi che l'installazione sia avvenuta con successo limitatevi da riga di comando o dal vostro terminale a digitare
+
+``` console
+
+>pandoc --version
+```
+Iniziamo ad usarlo 
+-------------
+
+Come? Semplicemente lanciando uno dei comandi principe, quello che consente di trasformare un file markdown in un file html.
+Entriamo nella cartella dove abbiamo prodotto il nostro markdown essenziale(se siete pigri scaricatevi quello che trovate al seguente [link][12]) e digitiamo il comando
+
+``` console
+
+>pandoc test1.md -o test1.html
+```
+Avvertenza: non è importante l'estensione del file origine, posso usare md(markdown) ma anche txt per esempio.
+Se doveste avere problemi con le lettere accentate aggiungete --ascii come opzione al comando subito dopo pandoc.
+Buona parte dei comandi disponibili sono elencati nella [demo][7].
+
+Ora convertiamo il nostro markdown nel popolare formato pdf.
+
+se tentaste di generare un pdf con il seguente comando
+``` console
+>pandoc test1.md -s -o test1.pdf
+```
+Pandoc vi avvertirebbe che manca [LaTeX][8] riportando il seguente messaggio:
+
+***pandoc: pdflatex not found. pdflatex is needed for pdf output.***
+
+Nella [guida][9] venite informati cosa fare al riguardo
+
+>"If you want to create a PDF, you'll need to have LaTeX installed. (See [MacTeX][10] on OS X, [MiKTeX][11] on Windows, or install the texlive package in linux.)"
+
+Si avete capito bene dovete installare un'altra applicazione per produrre file pdf, si tratta dell'implementazione di Latex per il vostro specifico sistema operativo; una volta fatto rilanciate il comando precedente e stavolta dovrebbe comparire il file test1.pdf tanto agognato.
+
+
+Dulcis in fundo: vi rammento il link dove potete scaricare gli [esempi][12] dei markdown usati nel post e l'intero articolo scritto in markdown per cimentarvi direttamente.
+
+Inoltre se preferite potete integrare nel vostro editor preferito un add-on o plugin che vi permetta l'anteprima di ciò che scrivete; io ad esempio usando [Brackets][13] ho installato l'estensione disponibile di nome Mardown Preview installabile dal menu File>manager delle Estensioni..
+
+![Markdown Preview per Brackets](markdown_preview.jpg)
+
+una volta installato dovrebbe comparire un bottone nel menu verticale di destra che vi permette di dividere l'editor in 2 sezioni, dove nella seconda naturalmente viene generata l'anteprima di ciò che digitate nella prima. 
+
+Lungi dall'essere esaustivo, tale tutorial, è volto solo ad incuriosirvi al fine di provare Pandoc o i tools on line o standalone che possano introdurre il Markdown nel vostro processo di scrittura.
+
+Rendiamo più facile salvare, cercare, condividere ed organizzare i nostri contenuti rendendoli di fatto compatibili e future-proof e last but not least ricordatevi che scrivendo in questo modo liberiamo l'autore dallo strumento.
+
+[1]: http://en.wikipedia.org/wiki/Markdown
+[2]: http://daringfireball.net/projects/markdown
+[3]: http://it.wikipedia.org/wiki/WYSIWYG
+[4]: http://daringfireball.net/projects/markdown/syntax
+[5]: https://twitter.com/gruber
+[6]: https://github.com/jgm/pandoc
+[7]: http://johnmacfarlane.net/pandoc/demos.html
+[8]: http://it.wikipedia.org/wiki/LaTeX
+[9]: http://johnmacfarlane.net/pandoc/getting-started.html#step-6-converting-a-file
+[10]:http://tug.org/mactex
+[11]:http://miktex.org/download
+[12]:https://github.com/ricmancio
+[13]:http://brackets.io
