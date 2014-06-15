@@ -102,7 +102,7 @@ Rendiamo più facile salvare, cercare, condividere ed organizzare i nostri conte
 [9]: http://johnmacfarlane.net/pandoc/getting-started.html#step-6-converting-a-file
 [10]:http://tug.org/mactex
 [11]:http://miktex.org/download
-[12]:https://github.com/ricmancio
+[12]:https://github.com/ricmancio/refacturing_posts
 [13]:http://brackets.io
 [14]:https://stackedit.io
 [15]:http://dillinger.io
