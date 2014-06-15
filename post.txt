@@ -12,10 +12,10 @@ Markdown Editor Online
 ---------
 Se preferite imparare scrivendo direttamente su editor così detti [WYSIWYG][3] che interpretano real-time la sintassi Markdown vi riporto qui sotto alcuni editor che ho ottenuto da una semplice ricerca in rete, solo per farvi un'idea delle applicazioni esistenti
 
- - https://stackedit.io
- - http://dillinger.io
- - http://markable.in
- - http://epiceditor.com
+ - [Stackedit][14]
+ - [Dillinger][15]
+ - [Markable][16]
+ - [Epiceditor][17]
 
 Qui invece trovate un buon articolo sullo stesso tema
 
@@ -104,3 +104,7 @@ Rendiamo più facile salvare, cercare, condividere ed organizzare i nostri conte
 [11]:http://miktex.org/download
 [12]:https://github.com/ricmancio
 [13]:http://brackets.io
+[14]:https://stackedit.io
+[15]:http://dillinger.io
+[16]:http://markable.in
+[17]:http://epiceditor.com
