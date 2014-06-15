@@ -45,14 +45,21 @@ Iniziamo ad usarlo
 -------------
 
 Come? Semplicemente lanciando uno dei comandi principe, quello che consente di trasformare un file markdown in un file html.
-Entriamo nella cartella dove abbiamo prodotto il nostro markdown essenziale(se siete pigri scaricatevi quello che trovate al seguente [link][12]) e digitiamo il comando
+Entriamo nella cartella dove abbiamo prodotto il nostro markdown essenziale e digitiamo il comando
 
 ``` console
 
 >pandoc test1.md -o test1.html
 ```
-Avvertenza: non è importante l'estensione del file origine, posso usare md(markdown) ma anche txt per esempio.
-Se doveste avere problemi con le lettere accentate aggiungete --ascii come opzione al comando subito dopo pandoc.
+Avvertenza: potete creare il vostro file test1.md o usare quello presente nel mio repository su [github][12], cambia il nome del file e la sua estensione (post.txt) questo per dirvi che non è importante l'estensione del file di origine da convertire, possiamo usare md(markdown) ma anche txt per esempio.
+Se doveste avere problemi con le lettere accentate aggiungete --ascii come opzione al comando pandoc.
+Quindi se seguite l'avvertenza il comando cambia in questo modo:
+
+``` console
+
+>pandoc --ascii post.txt -o post.html
+```
+
 Buona parte dei comandi disponibili sono elencati nella [demo][7].
 
 Ora convertiamo il nostro markdown nel popolare formato pdf.
